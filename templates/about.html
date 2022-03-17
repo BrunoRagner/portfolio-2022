@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.scss') }}">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="/"> <i class="fas fa-home"></i> <span>inicio</span> </a>
+    <a href="/about"> <i class="fas fa-user"></i> <span>sobre</span> </a>
+    <a href="/portfolio"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+   
+    <a href="/contact"> <i class="fas fa-address-book"></i> <span>contato</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- about section starts  -->
+
+<section class="about">
+
+    <h1 class="heading"> sobre <span>mim</span> </h1>
+
+    <div class="row">
+
+        <div class="info-container">
+
+            <h1>informaçoes pessoas </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> <span>nome : </span> Bruno Ragner </h3>
+                    <h3> <span>idade : </span> 37 </h3>
+                    <h3> <span>email : </span> brunooragnner@gmail.com </h3>
+                    <h3> <span>endereço : </span> Natal RN, Brasil </h3>
+                </div>
+    
+                <div class="box">
+                    <h3> <span>freelance : </span> PJ </h3>
+                    <h3> <span>cnpj : </span> 250.115.124/00001-22</h3>
+                    <h3> <span>abilidade : </span> front-end, TI, redes, mecatronica, segurança eletronica,automação de teste web.  </h3>
+                    <h3> <span>experience : </span> +20 anos </h3>
+                    <h3> <span>lingugem  : </span> protugues, english </h3>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn"> download CV <i class="fas fa-download"></i> </a>
+
+        </div>
+
+        <div class="count-container">
+
+            <div class="box">
+                <h3>+20anos </h3>
+                <p>experiencia </p>
+            </div>
+
+            <div class="box">
+                <h3>+450</h3>
+                <p>clientes felizes </p>
+            </div>
+
+            <div class="box">
+                <h3>+390</h3>
+                <p>projetos  </p>
+            </div>
+
+          
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- skills section starts  -->
+
+<section class="skills">
+
+    <h1 class="heading"> <span>minhas</span> abilidades </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-1.png') }}">
+            <h3>html</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-2.png') }}">
+            <h3>css</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-3.png') }}">
+            <h3>javascript</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-4.png') }}">
+            <h3>sass</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-5.png') }}">
+            <h3>jquery</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='icon-6.png') }}">
+            <h3>react.js</h3>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='') }}">
+            <h3>segurança eletronica</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='ti.jpeg') }}">
+            <h3>TI</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='rede.jpeg') }}">
+            <h3>redes</h3>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='') }}">
+            <h3>python3</h3>
+        </div>
+    </div>
+
+</section>
+
+<!-- skills section ends -->
+
+<!-- education section starts  -->
+
+<section class="education">
+
+    <h1 class="heading"> <span>minha</span> educação </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2004 - 2004</span>
+            <h3>curso de informatica</h3>
+            <p>senai</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2005 - 2006</span>
+            <h3>curso de eletricista</h3>
+            <p>senai</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2006 - 2008</span>
+            <h3>curso de instalador de eletronicos </h3>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2009 - 2011</span>
+            <h3>telecomunicaçao</h3>
+            <p>senai!</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2015 - 2017</span>
+            <h3>eletrotecnico</h3>
+            <p>cepep!</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2020 - 2021</span>
+            <h3>front-end development</h3>
+            <p></p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- education section ends -->
+
+</body>
+</html>

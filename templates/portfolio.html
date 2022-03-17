@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.scss') }}">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="/"> <i class="fas fa-home"></i> <span>inicio</span> </a>
+    <a href="/about"> <i class="fas fa-user"></i> <span>sobre</span> </a>
+    <a href="/portfolio"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+   
+    <a href="/contact"> <i class="fas fa-address-book"></i> <span>contato</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio">
+
+    <h1 class="heading"> <span>meu</span> protifolio </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>criaçao de site e lojas virtuas </h3>
+                <p>criaçao de site e lojas virtuas para todos os gostos .</p>
+                <a href="#">ver exenplo</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>criaçao de sistemas 2</h3>
+                <p>criaçao de sistemas de controle de estoque finaceiro .</p>
+                <a href="#">ver exenplo</a>
+            </div>
+        </div>
+       
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>instaçlaçao de cerca eletrica e consertina </h3>
+                <p></p>
+                <a href="#">ver exenplo</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>instalaçao de alarme</h3>
+                <p>.</p>
+                <a href="#">ver exenplo</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>cftv</h3>
+                <p>.</p>
+                <a href="#">ver exenplo</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='criasite.jpeg') }}" alt="">
+            <div class="content">
+                <h3>automaçao</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, praesentium.</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="btn"> load more <i class="fas fa-redo"></i> </a>
+    
+</section>
+
+<!-- portfolio section ends -->
+
+</body>
+</html>

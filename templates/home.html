@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.scss') }}">
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="/"> <i class="fas fa-home"></i> <span>inicio</span> </a>
+    <a href="/about"> <i class="fas fa-user"></i> <span>sobre</span> </a>
+    <a href="/portfolio"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+   
+    <a href="/contact"> <i class="fas fa-address-book"></i> <span>contato</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="image">
+        <img src="{{ url_for('static', filename='user.png') }}" alt="">
+    </div>
+
+    <div class="content">
+        <h3>oi , eu sou o Bruno</h3>
+        <span>front-end developer</span>
+        
+        <span>analista de teste web</span>
+       
+        <a href="/about" class="btn"> sobre mim <i class="fas fa-user"></i> </a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+</body>
+</html>
